@@ -3,7 +3,6 @@ Version:        1.9.0
 Release:        1
 Summary:        A Qt5-based client-side and server-side SOAP component
 Source0:        %{name}-%{version}.tar.gz
-Source1:        %{name}-%{version}.tar.gz.asc
 Url:            https://github.com/KDAB/KDSoap
 Group:          System/Libraries
 License:        GPL-2.0+
@@ -23,6 +22,8 @@ BuildRequires:  gcc-c++ qt5-qtbase-devel desktop-file-utils
 %if %{defined rhel}
 BuildRequires:  gcc-c++ qt5-qtbase-devel desktop-file-utils
 %endif
+
+BuildRequires:  pkgconfig(Qt5Core) pkgconfig(Qt5Network) pkgconfig(Qt5Widgets) pkgconfig(Qt5Xml)
 
 %description
 KDSoap can be used to create client applications for web services
