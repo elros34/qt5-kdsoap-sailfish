@@ -1,0 +1,3 @@
+[submodule "kdsoap"]
+	path = kdsoap
+	url = https://github.com/elros34/KDSoap
